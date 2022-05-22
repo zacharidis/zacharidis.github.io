@@ -128,23 +128,28 @@ section {
 
 .fa-linkedin:hover {
     color: #2166e7;
+    cursor: pointer;
 
 }
 .fa-instagram:hover {
     color: #2166e7;
+    cursor: pointer;
 
 }
 .fa-github:hover {
     color: #2166e7;
+    cursor: pointer;
 
 }
 .fa-youtube:hover {
     color: #2166e7;
+    cursor: pointer;
 
 }
 .fa-tiktok:hover {
     color: #2166e7;
 
+cursor: pointer;
 }
 
 
