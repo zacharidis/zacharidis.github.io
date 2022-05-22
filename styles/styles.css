@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+html {
+    font-size: 12px;
+}
+
+body{
+    background-color: #e72e0e;
+    color: aliceblue;
+    font-family: 'Oxygen', sans-serif;
+
+}
+
+li {
+    list-style-type:none;
+}
+
+section {
+    width: 35rem;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+
+
+}
+
+.personal .initials {
+    background-color:#FF6347;
+    color:aliceblue;
+    font-size: 1rem;
+    border: solid #FF6347;
+    border-radius: 0.2rem;
+    padding: 0.1rem 0.5rem;
+    position: absolute;
+    top: 1.5rem;
+    left :1.5rem;
+    
+
+
+}
+
+.personal {
+    background-color: #f74829;
+    padding: 2.5rem 0 1.5rem 0;
+
+}
+
+.personal img{
+    width: 19rem;
+    height: 19rem;
+    border-radius: 50%;
+    border: 0.5rem solid #e72e0e ;
+    display: block;
+    margin: auto;
+    
+}
+
+.personal .name {
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.personal .country {
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 0.5rem;
+}
+
+.personal .technology{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+
+}
+
+.personal .buttons {
+    text-align: center;
+}
+
+
+.personal button {
+    border: 1px solid #ca2407;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    background-color:transparent;
+    color: aliceblue;
+    font-size: 1.5rem;
+
+}
+
+.personal button:hover {
+    cursor: pointer;
+
+}
+
+
+
+
+.skills {
+    background-color: #fa3411;
+}
