@@ -132,22 +132,22 @@ section {
 
 }
 .fa-instagram:hover {
-    color: #2166e7;
+    color:burlywood;
     cursor: pointer;
 
 }
 .fa-github:hover {
-    color: #2166e7;
+    color: #040204;
     cursor: pointer;
 
 }
 .fa-youtube:hover {
-    color: #2166e7;
+    color: red;
     cursor: pointer;
 
 }
 .fa-tiktok:hover {
-    color: #2166e7;
+    color: black;
 
 cursor: pointer;
 }
