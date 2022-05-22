@@ -109,4 +109,21 @@ section {
 
 .skills {
     background-color: #fa3411;
+    padding: 1.8rem 1rem;
+    
+}
+
+.skills h2 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.skills ul li {
+    display: inline-block;
+    font-size: 1.2rem;
+    border: 0.2rem solid #ca2407;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+
 }
