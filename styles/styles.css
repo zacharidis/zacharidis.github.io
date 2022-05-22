@@ -19,7 +19,7 @@ a {
 }
 
 body{
-    background-color: #e72e0e;
+    background-color: #15133C;
     color: aliceblue;
     font-family: 'Oxygen', sans-serif;
 
@@ -35,14 +35,14 @@ section {
     top: 50%;
     right: 50%;
     transform: translate(50%,-50%);
-    box-shadow: 0px 10px 20px -1px #2166e7;
+    box-shadow: 0px 10px 20px -1px #73777B;
     
 
 
 }
 
 .personal .initials {
-    background-color:#FF6347;
+    background-color:#3E497A;
     color:aliceblue;
     font-size: 1rem;
     border: solid #FF6347;
@@ -57,7 +57,7 @@ section {
 }
 
 .personal {
-    background-color: #f74829;
+    background-color: #3E497A;
     padding: 2.5rem 0 1.5rem 0;
 
 }
@@ -75,6 +75,7 @@ section {
 .personal .name {
     font-size: 2rem;
     text-align: center;
+    margin-top: 1.5rem;
 
 }
 
@@ -92,12 +93,13 @@ section {
 }
 
 .personal .buttons {
+    margin-top: 1rem;
     text-align: center;
 }
 
 
 .personal button {
-    border: 1px solid #ca2407;
+    border: 2px solid #ca2407;
     padding: 1rem 2rem;
     border-radius: 0.5rem;
     background-color:transparent;
@@ -117,10 +119,38 @@ section {
 }
 
 .social i {
+    
+
     font-size: 4rem;
     margin: 2rem 0.5rem;
     
 }
+
+.fa-linkedin:hover {
+    color: #2166e7;
+
+}
+.fa-instagram:hover {
+    color: #2166e7;
+
+}
+.fa-github:hover {
+    color: #2166e7;
+
+}
+.fa-youtube:hover {
+    color: #2166e7;
+
+}
+.fa-tiktok:hover {
+    color: #2166e7;
+
+}
+
+
+
+
+
 
 
 
