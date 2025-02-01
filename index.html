@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            background-color: #f4f4f4;
+            background: linear-gradient(135deg, #1e3c72, #f89b29);
             font-family: 'Segoe UI', sans-serif;
             margin: 0;
             padding: 0;
@@ -15,21 +15,24 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
+            color: white;
         }
         .container {
-            width: 80%;
-            max-width: 900px;
-            background: #ffffff;
+            width: 85%;
+            max-width: 950px;
+            background: rgba(255, 255, 255, 0.1);
             padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
             display: grid;
             grid-template-columns: 1fr 2fr;
             gap: 30px;
+            backdrop-filter: blur(10px);
         }
         .profile-image img {
             width: 100%;
-            border-radius: 10px;
+            border-radius: 12px;
+            border: 4px solid white;
         }
         .info-section {
             display: flex;
@@ -37,11 +40,11 @@
             justify-content: center;
         }
         .info-section h1 {
-            color: #0078D4;
+            color: #ffffff;
             margin-bottom: 10px;
+            font-size: 32px;
         }
         .info-section p {
-            color: #333;
             font-size: 18px;
             margin-bottom: 20px;
         }
@@ -50,26 +53,29 @@
         }
         .social-links a {
             display: block;
-            color: #0078D4;
+            color: #ffffff;
             text-decoration: none;
-            font-size: 16px;
-            margin-bottom: 8px;
+            font-size: 18px;
+            margin-bottom: 10px;
+            transition: 0.3s;
         }
         .social-links a:hover {
             text-decoration: underline;
+            font-weight: bold;
         }
         .skills-section {
             margin-top: 20px;
         }
         .skill {
-            background: #0078D4;
+            background: rgba(255, 255, 255, 0.3);
             color: white;
-            padding: 8px 12px;
-            border-radius: 4px;
+            padding: 8px 14px;
+            border-radius: 6px;
             margin: 5px;
             display: inline-block;
             font-size: 14px;
             font-weight: bold;
+            backdrop-filter: blur(5px);
         }
     </style>
 </head>
