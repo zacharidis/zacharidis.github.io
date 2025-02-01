@@ -1,90 +1,65 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Bio</title>
+    <title>Professional Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            background-color: #eef2f5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
+            background-color: #f4f4f4;
             font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
-        .bio-container {
+        .container {
+            width: 80%;
+            max-width: 900px;
             background: #ffffff;
-            color: #333;
             padding: 40px;
-            border-radius: 10px;
-            width: 600px;
+            border-radius: 12px;
             box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-        .header {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
         }
         .profile-image img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            border: 4px solid #0078D4;
+            width: 100%;
+            border-radius: 10px;
         }
-        .info {
-            text-align: left;
+        .info-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
-        .info h1 {
-            margin: 0;
+        .info-section h1 {
             color: #0078D4;
+            margin-bottom: 10px;
         }
-        .role {
+        .info-section p {
+            color: #333;
             font-size: 18px;
-            font-weight: 600;
-            color: #444;
-        }
-        .contact-button {
-            background: #0078D4;
-            border: none;
-            color: white;
-            padding: 12px 24px;
-            border-radius: 6px;
-            cursor: pointer;
-            margin-top: 20px;
-            font-size: 16px;
-            transition: 0.3s;
-        }
-        .contact-button:hover {
-            background: #005A9E;
+            margin-bottom: 20px;
         }
         .social-links {
-            margin-top: 30px;
-            font-size: 16px;
-            text-align: left;
-            width: 100%;
+            margin-top: 20px;
         }
         .social-links a {
             display: block;
-            text-decoration: none;
             color: #0078D4;
-            font-weight: bold;
+            text-decoration: none;
+            font-size: 16px;
             margin-bottom: 8px;
         }
         .social-links a:hover {
             text-decoration: underline;
         }
         .skills-section {
-            margin-top: 30px;
-            text-align: center;
+            margin-top: 20px;
         }
         .skill {
             background: #0078D4;
@@ -99,35 +74,32 @@
     </style>
 </head>
 <body>
-    <div class="bio-container">
-        <div class="header">
-            <div class="profile-image">
-                <img src="media/george.jpg" alt="Profile Picture">
-            </div>
-            <div class="info">
-                <h1>Zacharidis Georgios</h1>
-                <p class="role">Software Engineer | Full Stack Developer</p>
-            </div>
+    <div class="container">
+        <div class="profile-image">
+            <img src="media/george.jpg" alt="Profile Picture">
         </div>
-        <button class="contact-button">Contact Me</button>
-        <div class="social-links">
-            <h3>Connect with me:</h3>
-            <a href="https://www.linkedin.com/in/zacharidis" target="_blank">LinkedIn: zacharidis</a>
-            <a href="https://www.instagram.com/zchrds" target="_blank">Instagram: @zchrds</a>
-            <a href="https://www.github.com/zacharidis" target="_blank">GitHub: zacharidis</a>
-            <a href="#" target="_blank">YouTube: Zacharidis Channel</a>
-            <a href="#" target="_blank">TikTok: @zacharidis</a>
-        </div>
-        <div class="skills-section">
-            <h3>Skills</h3>
-            <span class="skill">C# & .NET</span>
-            <span class="skill">Java & Spring Boot</span>
-            <span class="skill">JavaScript</span>
-            <span class="skill">SQL</span>
-            <span class="skill">HTML / CSS</span>
-            <span class="skill">Dynamics 365</span>
-            <span class="skill">Azure</span>
-            <span class="skill">X++</span>
+        <div class="info-section">
+            <h1>Zacharidis Georgios</h1>
+            <p>Software Engineer | Full Stack Developer</p>
+            <div class="social-links">
+                <h3>Connect with me:</h3>
+                <a href="https://www.linkedin.com/in/zacharidis" target="_blank">LinkedIn: zacharidis</a>
+                <a href="https://www.instagram.com/zchrds" target="_blank">Instagram: @zchrds</a>
+                <a href="https://www.github.com/zacharidis" target="_blank">GitHub: zacharidis</a>
+                <a href="#" target="_blank">YouTube: Zacharidis Channel</a>
+                <a href="#" target="_blank">TikTok: @zacharidis</a>
+            </div>
+            <div class="skills-section">
+                <h3>Skills</h3>
+                <span class="skill">C# & .NET</span>
+                <span class="skill">Java & Spring Boot</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">SQL</span>
+                <span class="skill">HTML / CSS</span>
+                <span class="skill">Dynamics 365</span>
+                <span class="skill">Azure</span>
+                <span class="skill">X++</span>
+            </div>
         </div>
     </div>
 </body>
