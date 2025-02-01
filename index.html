@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio</title>
+    <title>Georgios Zacharidis - Professional Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -11,102 +11,124 @@
             font-family: 'Segoe UI', sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
             color: white;
         }
         .container {
-            width: 85%;
-            max-width: 950px;
-            background: rgba(255, 255, 255, 0.1);
+            max-width: 1000px;
+            margin: auto;
             padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 30px;
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        header h1 {
+            font-size: 42px;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 10px;
             backdrop-filter: blur(10px);
         }
-        .profile-image img {
-            width: 100%;
-            border-radius: 12px;
+        .profile img {
+            display: block;
+            margin: auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
             border: 4px solid white;
         }
-        .info-section {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .info-section h1 {
-            color: #ffffff;
-            margin-bottom: 10px;
-            font-size: 32px;
-        }
-        .info-section p {
-            font-size: 18px;
-            margin-bottom: 20px;
+        .skills span {
+            background: rgba(255, 255, 255, 0.3);
+            padding: 10px;
+            border-radius: 5px;
+            margin: 5px;
+            display: inline-block;
         }
         .social-links {
+            text-align: center;
             margin-top: 20px;
         }
         .social-links a {
-            display: block;
-            color: #ffffff;
+            color: white;
             text-decoration: none;
+            margin: 5px;
+            display: inline-block;
             font-size: 18px;
-            margin-bottom: 10px;
-            transition: 0.3s;
         }
         .social-links a:hover {
             text-decoration: underline;
-            font-weight: bold;
-        }
-        .skills-section {
-            margin-top: 20px;
-        }
-        .skill {
-            background: rgba(255, 255, 255, 0.3);
-            color: white;
-            padding: 8px 14px;
-            border-radius: 6px;
-            margin: 5px;
-            display: inline-block;
-            font-size: 14px;
-            font-weight: bold;
-            backdrop-filter: blur(5px);
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="profile-image">
-            <img src="media/george.jpg" alt="Profile Picture">
-        </div>
-        <div class="info-section">
-            <h1>Zacharidis Georgios</h1>
-            <p>Software Engineer | Full Stack Developer</p>
+        <header>
+            <h1>Georgios Zacharidis</h1>
+            <p>Solutions Engineer | Full Stack Developer</p>
+        </header>
+        <nav>
+            <a href="#profile">Profile</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <section id="profile" class="section profile">
+            <img src="media/george.jpg" alt="Georgios Zacharidis">
+            <p>Solutions Engineer with experience in Dynamics 365, Azure, and full-stack development. Passionate about creating impactful solutions.</p>
+        </section>
+        <section id="experience" class="section">
+            <h2>Experience</h2>
+            <p><strong>Solutions Engineer at Pfizer</strong> (05/2023 - Present)</p>
+            <p>Specializing in Dynamics 365 Finance and Operations, Azure Logic Apps, and X++ development.</p>
+            <p><strong>Web Developer at University of Ioannina</strong> (2013 - 2014)</p>
+            <p>Developed an educational web app for professors and students.</p>
+        </section>
+        <section id="skills" class="section skills">
+            <h2>Skills</h2>
+            <span>C# & .NET</span>
+            <span>Java & Spring Boot</span>
+            <span>JavaScript</span>
+            <span>SQL</span>
+            <span>HTML / CSS</span>
+            <span>Dynamics 365</span>
+            <span>Azure</span>
+            <span>X++</span>
+        </section>
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <p><strong>BSc Information Management</strong>, University of Kavala</p>
+            <p><strong>MSc Information Systems</strong>, University of Macedonia</p>
+        </section>
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:zacharidis@outlook.com">zacharidis@outlook.com</a></p>
+            <p>Phone: <a href="tel:+306951844442">+30 695 184 4442</a></p>
             <div class="social-links">
-                <h3>Connect with me:</h3>
-                <a href="https://www.linkedin.com/in/zacharidis" target="_blank">LinkedIn: zacharidis</a>
-                <a href="https://www.instagram.com/zchrds" target="_blank">Instagram: @zchrds</a>
-                <a href="https://www.github.com/zacharidis" target="_blank">GitHub: zacharidis</a>
-                <a href="#" target="_blank">YouTube: Zacharidis Channel</a>
-                <a href="#" target="_blank">TikTok: @zacharidis</a>
+                <a href="https://www.linkedin.com/in/zacharidis" target="_blank">LinkedIn</a>
+                <a href="https://www.github.com/zacharidis" target="_blank">GitHub</a>
+                <a href="https://www.instagram.com/zchrds" target="_blank">Instagram</a>
+                <a href="#" target="_blank">YouTube</a>
+                <a href="#" target="_blank">TikTok</a>
             </div>
-            <div class="skills-section">
-                <h3>Skills</h3>
-                <span class="skill">C# & .NET</span>
-                <span class="skill">Java & Spring Boot</span>
-                <span class="skill">JavaScript</span>
-                <span class="skill">SQL</span>
-                <span class="skill">HTML / CSS</span>
-                <span class="skill">Dynamics 365</span>
-                <span class="skill">Azure</span>
-                <span class="skill">X++</span>
-            </div>
-        </div>
+        </section>
     </div>
 </body>
 </html>
