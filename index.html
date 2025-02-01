@@ -1,1 +1,118 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Bio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .bio-card {
+            background: #ffffff;
+            color: #333333;
+            text-align: center;
+            padding: 40px;
+            border-radius: 12px;
+            width: 500px;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        .profile-image img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #0078D4;
+        }
+        .contact-button {
+            background: #0078D4;
+            border: none;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 16px;
+            transition: 0.3s ease-in-out;
+        }
+        .contact-button:hover {
+            background: #005A9E;
+        }
+        .social {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .social a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #0078D4;
+            color: white;
+            font-size: 22px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .social a:hover {
+            background-color: #005A9E;
+        }
+        .skills-section {
+            background: #F3F2F1;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 25px;
+        }
+        .skill {
+            background: #0078D4;
+            color: white;
+            padding: 8px 14px;
+            border-radius: 4px;
+            margin: 5px;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="bio-card">
+        <div class="profile-image">
+            <img src="media/george.jpg" alt="Profile Picture">
+        </div>
+        <h2>Zacharidis Georgios</h2>
+        <p class="role">Software Engineer | Full Stack Developer</p>
+        <button class="contact-button">Contact Me</button>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/zacharidis" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
+            <a href="https://www.instagram.com/zchrds" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>
+            <a href="https://www.github.com/zacharidis" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        <div class="skills-section">
+            <h3>Skills</h3>
+            <span class="skill">C# & .NET</span>
+            <span class="skill">Java & Spring Boot</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">SQL</span>
+            <span class="skill">HTML / CSS</span>
+            <span class="skill">Dynamics 365</span>
+            <span class="skill">Azure</span>
+            <span class="skill">X++</span>
+        </div>
+    </div>
+</body>
+</html>
