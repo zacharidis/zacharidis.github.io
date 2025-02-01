@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business Bio</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         body {
-            background-color: #f4f4f4;
+            background-color: #eef2f5;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -17,21 +16,41 @@
             margin: 0;
             font-family: 'Segoe UI', sans-serif;
         }
-        .bio-card {
+        .bio-container {
             background: #ffffff;
-            color: #333333;
-            text-align: center;
+            color: #333;
             padding: 40px;
-            border-radius: 12px;
-            width: 500px;
-            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
-            position: relative;
+            border-radius: 10px;
+            width: 600px;
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
         }
         .profile-image img {
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             border: 4px solid #0078D4;
+        }
+        .info {
+            text-align: left;
+        }
+        .info h1 {
+            margin: 0;
+            color: #0078D4;
+        }
+        .role {
+            font-size: 18px;
+            font-weight: 600;
+            color: #444;
         }
         .contact-button {
             background: #0078D4;
@@ -42,43 +61,35 @@
             cursor: pointer;
             margin-top: 20px;
             font-size: 16px;
-            transition: 0.3s ease-in-out;
+            transition: 0.3s;
         }
         .contact-button:hover {
             background: #005A9E;
         }
-        .social {
-            margin-top: 25px;
-            display: flex;
-            justify-content: center;
-            gap: 15px;
+        .social-links {
+            margin-top: 30px;
+            font-size: 16px;
+            text-align: left;
+            width: 100%;
         }
-        .social a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: #0078D4;
-            color: white;
-            font-size: 22px;
+        .social-links a {
+            display: block;
             text-decoration: none;
-            transition: 0.3s;
+            color: #0078D4;
+            font-weight: bold;
+            margin-bottom: 8px;
         }
-        .social a:hover {
-            background-color: #005A9E;
+        .social-links a:hover {
+            text-decoration: underline;
         }
         .skills-section {
-            background: #F3F2F1;
-            padding: 15px;
-            border-radius: 6px;
-            margin-top: 25px;
+            margin-top: 30px;
+            text-align: center;
         }
         .skill {
             background: #0078D4;
             color: white;
-            padding: 8px 14px;
+            padding: 8px 12px;
             border-radius: 4px;
             margin: 5px;
             display: inline-block;
@@ -88,19 +99,24 @@
     </style>
 </head>
 <body>
-    <div class="bio-card">
-        <div class="profile-image">
-            <img src="media/george.jpg" alt="Profile Picture">
+    <div class="bio-container">
+        <div class="header">
+            <div class="profile-image">
+                <img src="media/george.jpg" alt="Profile Picture">
+            </div>
+            <div class="info">
+                <h1>Zacharidis Georgios</h1>
+                <p class="role">Software Engineer | Full Stack Developer</p>
+            </div>
         </div>
-        <h2>Zacharidis Georgios</h2>
-        <p class="role">Software Engineer | Full Stack Developer</p>
         <button class="contact-button">Contact Me</button>
-        <div class="social">
-            <a href="https://www.linkedin.com/in/zacharidis" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
-            <a href="https://www.instagram.com/zchrds" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>
-            <a href="https://www.github.com/zacharidis" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        <div class="social-links">
+            <h3>Connect with me:</h3>
+            <a href="https://www.linkedin.com/in/zacharidis" target="_blank">LinkedIn: zacharidis</a>
+            <a href="https://www.instagram.com/zchrds" target="_blank">Instagram: @zchrds</a>
+            <a href="https://www.github.com/zacharidis" target="_blank">GitHub: zacharidis</a>
+            <a href="#" target="_blank">YouTube: Zacharidis Channel</a>
+            <a href="#" target="_blank">TikTok: @zacharidis</a>
         </div>
         <div class="skills-section">
             <h3>Skills</h3>
