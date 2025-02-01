@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Profile</title>
+    <title>Business Bio</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         body {
-            background-color: #f3f3f3;
+            background-color: #f4f4f4;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -16,39 +16,21 @@
             margin: 0;
             font-family: 'Segoe UI', sans-serif;
         }
-        .profile-card {
+        .bio-card {
             background: #ffffff;
             color: #333333;
             text-align: center;
             padding: 40px;
             border-radius: 12px;
-            width: 450px;
+            width: 500px;
             box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
             position: relative;
-        }
-        .badge {
-            background: #0078D4;
-            color: white;
-            padding: 6px 12px;
-            border-radius: 6px;
-            position: absolute;
-            top: 15px;
-            left: 15px;
-            font-weight: bold;
         }
         .profile-image img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             border: 4px solid #0078D4;
-        }
-        .status-dot {
-            display: inline-block;
-            width: 12px;
-            height: 12px;
-            background: #107C10;
-            border-radius: 50%;
-            margin-left: 5px;
         }
         .contact-button {
             background: #0078D4;
@@ -64,17 +46,17 @@
         .contact-button:hover {
             background: #005A9E;
         }
-        .social-links {
+        .social {
             margin-top: 25px;
         }
-        .social-links i {
+        .social a {
             margin: 8px;
             font-size: 24px;
-            cursor: pointer;
-            transition: 0.3s;
             color: #0078D4;
+            text-decoration: none;
+            transition: 0.3s;
         }
-        .social-links i:hover {
+        .social a:hover {
             color: #005A9E;
         }
         .skills-section {
@@ -96,27 +78,21 @@
     </style>
 </head>
 <body>
-    <div class="profile-card">
-        <div class="badge">GZ</div>
+    <div class="bio-card">
         <div class="profile-image">
             <img src="media/george.jpg" alt="Profile Picture">
         </div>
         <h2>Zacharidis Georgios</h2>
-        <p class="location">GR - CA <span class="status-dot"></span></p>
-        <p class="role">Full Stack Developer</p>
-        <button class="contact-button">Contact</button>
-         <div class="social">
-                
-               <a href="https://www.linkedin.com/in/zacharidis" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
-
-               <a href="https://www.instagram.com/zchrds" target="_blank"> <i class="fa-brands fa-instagram"> </i></a> 
-                <a href="https://www.github.com/zacharidis" target="_blank"><i class="fa-brands fa-github"></i></a>
-                
-                <i class="fa-brands fa-youtube"></i>
-                
-                <i class="fa-brands fa-tiktok"></i>
-            </div>
-        
+        <p class="role">Software Engineer | Full Stack Developer</p>
+        <button class="contact-button">Contact Me</button>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/zacharidis" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
+            <a href="https://www.instagram.com/zchrds" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>
+            <a href="https://www.github.com/zacharidis" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        <div class="skills-section">
             <h3>Skills</h3>
             <span class="skill">C# & .NET</span>
             <span class="skill">Java & Spring Boot</span>
